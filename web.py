@@ -17,6 +17,7 @@ def index() :
         print(data)
         response = requests.post(url, json=data)
 
+
         return render_template('index.html', title="Это: " + response.text)
 
 
