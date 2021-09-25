@@ -16,6 +16,7 @@ def index() :
                  float(request.form['list4'])]]
         print(data)
         response = requests.post(url, json=data)
+        print(response.text)
 
 
         return render_template('index.html', title="Это: " + response.text)
