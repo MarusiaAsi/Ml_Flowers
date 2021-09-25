@@ -1,4 +1,4 @@
-import pickle as p
+import pypickle as p
 import os
 
 from flask import Flask, request, jsonify
